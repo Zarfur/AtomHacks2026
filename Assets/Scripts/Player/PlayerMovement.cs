@@ -23,15 +23,15 @@ public class PlayerMovementScript : MonoBehaviour
     void FixedUpdate()
     {
         // Player controls
-        if(Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed){
+        if (Keyboard.current.aKey.isPressed || Keyboard.current.leftArrowKey.isPressed){
             //myAnimator.SetBool("isRunning", true);
             horizontal = -movementFactor;
         }
-        else if(Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed){
+        else if (Keyboard.current.dKey.isPressed || Keyboard.current.rightArrowKey.isPressed){
             //myAnimator.SetBool("isRunning", true);
             horizontal = movementFactor;
         }
-        else{ 
+        else { 
             //myAnimator.SetBool("isRunning", false);
             horizontal = 0;
         }
@@ -40,11 +40,11 @@ public class PlayerMovementScript : MonoBehaviour
             //myAnimator.SetBool("isRunning", true);
             vertical = movementFactor;
         }
-        if(Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed){
+        else if (Keyboard.current.sKey.isPressed || Keyboard.current.downArrowKey.isPressed){
             //myAnimator.SetBool("isRunning", true);
             vertical = -movementFactor;
         }
-        else{
+        else {
             //myAnimator.SetBool("isRunning", false);
             vertical = 0;
         }

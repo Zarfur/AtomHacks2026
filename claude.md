@@ -9,18 +9,6 @@ The player survives endless waves of enemies, collecting XP and choosing upgrade
 - C#
 - Unity Physics 2D
 
-## Project Structure
-Assets/
-├── Scripts/
-│   ├── Player/
-│   ├── Enemies/
-│   ├── Weapons/
-│   ├── Upgrades/
-│   └── Managers/
-├── Prefabs/
-├── Scenes/
-└── Art/
-
 ## Core Systems
 
 ### Player
@@ -36,27 +24,8 @@ Assets/
 ### Weapons / Companions
 - Weapons are components attached to the player
 - Each weapon has: Damage, Cooldown, Level (1–3)
-- Star Companion: hovers above player, fires piercing beam periodically
-  - Level 3 evolution: Pulsar Star (rotates, fires beams in all directions)
 
 ### Upgrade System
-- UpgradeManager picks 3 random upgrades on levelup
+- UpgradeManager picks a random upgrades on levelup
 - Each upgrade either adds a new weapon or levels up an existing one
 - Max level per weapon: 3
-
-### Managers
-- GameManager: wave timer, score, game state
-- EnemySpawner: spawns enemies on an interval, increases difficulty over time
-- UpgradeManager: handles levelup UI and applying upgrades
-
-## Coding Conventions
-- MonoBehaviours for game objects
-- ScriptableObjects for weapon/upgrade definitions
-- Use object pooling for bullets and XP orbs
-- Avoid FindObjectOfType in Update() — cache references in Awake/Start
-
-## Known Issues / TODOs
-- [ ] Add more enemy types
-- [ ] Polish upgrade UI
-- [ ] Add screen shake on hit
-- [ ] Final boss at wave 10?

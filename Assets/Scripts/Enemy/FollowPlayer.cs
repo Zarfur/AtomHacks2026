@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class s_FollowPlayer : MonoBehaviour
 {
-
     [SerializeField] public Rigidbody2D target;
     [SerializeField] public Rigidbody2D rigidBody;
     [SerializeField] private float speed;
