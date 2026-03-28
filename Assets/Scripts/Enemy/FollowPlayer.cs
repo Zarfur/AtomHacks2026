@@ -9,15 +9,23 @@ public class s_FollowPlayer : MonoBehaviour
     private float xVelo;
     private float yVelo;
 
-    void Update()
+
+    void Awake()
     {
+        rigidBody.gravityScale = 0f;
+    }
+
+    void Update(){
+
+        //from unity documentation
         Vector2 heading = target.position - rigidBody.position;
         var distance  = heading.magnitude;
         var direction = heading / distance;
+        //
+
 
         xVelo = direction.x;
         yVelo = direction.y;
-        
         rigidBody.position += new Vector2(xVelo * speed, yVelo * speed);
     }
 }
