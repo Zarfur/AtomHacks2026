@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class s_FollowPlayer : MonoBehaviour
+public class FollowPlayer : MonoBehaviour
 {
     [SerializeField] public Rigidbody2D target;
     [SerializeField] public Rigidbody2D rigidBody;

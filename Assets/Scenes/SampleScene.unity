@@ -433,6 +433,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1435976874176377891, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2315706455397235509, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0148
@@ -472,6 +476,15 @@ PrefabInstance:
     - target: {fileID: 2315706455397235509, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362525658906322164, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362525658906322164, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
