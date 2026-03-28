@@ -20,8 +20,6 @@ public class s_FollowPlayer : MonoBehaviour
         Vector2 heading = target.position - rigidBody.position;
         var distance  = heading.magnitude;
         var direction = heading / distance;
-        //
-
 
         xVelo = direction.x;
         yVelo = direction.y;
