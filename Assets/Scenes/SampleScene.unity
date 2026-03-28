@@ -355,11 +355,29 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &925837304 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1435976874176377891, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+  m_PrefabInstance: {fileID: 6008416303700658054}
+  m_PrefabAsset: {fileID: 0}
 --- !u!50 &925837308 stripped
 Rigidbody2D:
   m_CorrespondingSourceObject: {fileID: 3854162216308603631, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
   m_PrefabInstance: {fileID: 6008416303700658054}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &925837311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925837304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb2cebc78aa44004a80517ae84fb15f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHp
+  Health: 100
 --- !u!1001 &2865775697782271768
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -433,6 +451,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1435976874176377891, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 2315706455397235509, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.0148
@@ -473,10 +495,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4936981086815694169, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362525658906322164, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7362525658906322164, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+      propertyPath: _data._json
+      value: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"Health","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1435976874176377891, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 925837311}
   m_SourcePrefab: {fileID: 100100000, guid: 0ba777c1b2504aa428ad65fe1c1ac40f, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

@@ -2,19 +2,24 @@ using UnityEngine;
 
 public class Damaging : MonoBehaviour
 {
-    [SerializeField] BoxCollider2D collider;
 
-    void OnCollisionEnter(Collision other){
-        Debug.Log("Hit other");
-    }
-    void Start()
+    public float cd = 0f;
+    void OnTriggerStay2D(Collider2D other)
     {
-        
+        if (other.CompareTag("Player"))
+        {
+            PlayerHp player = other.GetComponent<PlayerHp>();
+            if(cd > 2f){
+                cd = 0f;
+                player.takeDamage();
+            }
+        }
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        cd += Time.deltaTime;
     }
+
 }
